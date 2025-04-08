@@ -8,10 +8,10 @@ The NER system leverages **OpenAI GPT-4**, a powerful large language model, and 
 
 ## Sample Prompts
 
-### Prompt in English
+### Prompt in English (1 shot)
 
-The task is to label Location entities in the given Nepali sentence. Below are some examples of Input–Output pairs.  
-For prediction, follow the same format as shown and **do not provide any explanations**.
+The task is to label Organization entities in the given Nepali sentence.  Below are some examples with Input and Output pairs. 
+For the prediction, you should generate the output in the same format as in the examples.  Do not give any explanations. 
 
 **Examples:**
 
@@ -25,11 +25,12 @@ Now predict the output for the following input sentence:
 **Input**:  
 अङ्क तालिका मा युएई शीर्षस्थान मा छ भने नेपाल दोस्रो स्थान मा छ ।
 
----
 
-### Prompt in Nepali
 
-गर्नुपर्ने काम भनेको दिइएको नेपाली वाक्यमा स्थानको नामलाई @@ ## भित्र लेबल गर्नु हो।  
+
+### Prompt in Nepali (1 shot)
+
+गर्नुपर्ने काम भनेको दिइएको नेपाली वाक्यमा सङ्घ संस्थाको नाम नामलाई @@ ## भित्र लेबल गर्नु हो।  
 तल वाक्य र लेबल गरेका नतिजाका केही उदाहरणहरू दिइएका छन्।  
 **वाक्यलाई लेबल गर्दा उदाहरणको जस्तै ढाँचामा मात्र गर्नुहोस्। कुनै थप व्याख्या नगर्नुहोस्।**
 
@@ -44,6 +45,9 @@ Now predict the output for the following input sentence:
 
 **वाक्य**:  
 अङ्क तालिका मा युएई शीर्षस्थान मा छ भने नेपाल दोस्रो स्थान मा छ ।
+
+
+
 
 ## Features
 
